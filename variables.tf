@@ -2,19 +2,16 @@
 variable "name" {
   type        = string
   description = "Name of the service connection policy"
-  default     = "service-connection-policy"
 }
 
 variable "location" {
   type        = string
   description = "Location of the service connection policy"
-  default     = "us-central1"
 }
 
 variable "service_class" {
   type        = string
   description = "Service class of the policy (e.g., 'gcp-memorystore-redis')"
-  default     = "gcp-memorystore-redis"
 }
 
 variable "network" {
