@@ -13,6 +13,7 @@ resource "google_network_connectivity_service_connection_policy" "default" {
   location      = var.location
   service_class = var.service_class
   network       = var.network
+  project       = var.project_id
 
   dynamic "psc_config" {
     for_each = var.psc_config
