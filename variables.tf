@@ -3,6 +3,10 @@ variable "name" {
   type        = string
   description = "Name of the service connection policy"
 }
+variable "project_id" {
+  type        = string
+  description = "project where scp needs to be deployed"
+}
 
 variable "location" {
   type        = string
