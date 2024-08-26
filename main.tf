@@ -25,8 +25,9 @@ resource "google_network_connectivity_service_connection_policy" "default" {
 
  lifecycle {
     depends_on = [
-       google_network_connectivity_service_connection.default.psc_connections
+      google_network_connectivity_service_connection.default
     ]
   }
+
 
 }
