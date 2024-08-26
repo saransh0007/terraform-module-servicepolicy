@@ -22,4 +22,11 @@ resource "google_network_connectivity_service_connection_policy" "default" {
       limit       = psc_config.value.limit
     }
   }
+
+ lifecycle {
+    depends_on = [
+       google_network_connectivity_service_connection.default.my_psc_connection
+    ]
+  }
+
 }
